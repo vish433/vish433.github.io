@@ -164,7 +164,7 @@ a:hover {
 }
 
 .mega-section {
-  padding: 5rem 0;
+  padding: 7rem 0;
 }
 @media (max-width: 767px) {
   .mega-section {
@@ -3748,6 +3748,8 @@ body.rounded-btns .read-more {
   margin: 0;
   font-size: 0.85rem;
   color: var(--clr-dark-grey);
+  margin-top: 5rem !important;
+  margin-left: 1rem !important;
 }
 .copyrights .creadits .link {
   font-weight: 600;
