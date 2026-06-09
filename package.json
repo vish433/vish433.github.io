@@ -1,0 +1,13 @@
+{
+  "name": "dhanshikas-craft-studio",
+  "version": "1.0.0",
+  "description": "A creative art and craft website for Dhanshika with contact email backend.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.4",
+    "nodemailer": "^6.9.5"
+  }
+}

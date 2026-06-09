@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhanshika's Craft Studio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="logo">✨</span>
+      <div>
+        <h1>Dhanshika's Craft Studio</h1>
+        <p>Where every design sparkles with story.</p>
+      </div>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a id="uploadNavLink" href="#upload" class="hidden">Upload</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a href="#journal">Journal</a>
+    </nav>
+    <button id="authButton" class="button secondary">Login</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Hello, I’m Dhanshika!</p>
+        <h2>I design colorful art and crafts that tell happy stories.</h2>
+        <p>Share your creations, write a little about them, and grow your own creative storefront.</p>
+        <a id="ownerUploadButton" href="#upload" class="button hidden">Upload a design</a>
+      </div>
+      <div class="hero-card">
+        <div class="card-title">Today’s craft idea</div>
+        <p>Create a glittery friendship bracelet inspired by summer clouds and your favorite song.</p>
+      </div>
+    </section>
+
+    <section id="login" class="section login-section hidden" hidden>
+      <div class="section-head">
+        <span>Owner login</span>
+        <h3>Sign in to upload new designs</h3>
+      </div>
+      <form id="ownerLoginForm" class="login-form">
+        <label>
+          Username
+          <input type="text" id="loginUsername" required />
+        </label>
+        <label>
+          Password
+          <input type="password" id="loginPassword" required />
+        </label>
+        <button type="submit" class="button secondary">Login</button>
+        <p id="authStatus" class="status-message"></p>
+      </form>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="section-head">
+        <span>About me</span>
+        <h3>Small hands, big dreams.</h3>
+      </div>
+      <div class="about-grid">
+        <article>
+          <h4>My mission</h4>
+          <p>I love turning paper, beads, paint, and imagination into crafts everyone wants to keep. This website is my creative shop where I share my designs and stories.</p>
+        </article>
+        <article>
+          <h4>What I make</h4>
+          <p>From handmade cards to painted rocks, my designs are colorful, cheerful, and made with love for friends, family, and fun.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="upload" class="section upload-section hidden">
+      <div class="section-head">
+        <span>Upload</span>
+        <h3>Upload your design and tell its story</h3>
+      </div>
+      <form id="designForm" class="design-form">
+        <label>
+          Design name
+          <input type="text" id="designTitle" placeholder="Sparkly Unicorn Card" required />
+        </label>
+
+        <label>
+          Tell the story
+          <textarea id="designDescription" rows="4" placeholder="Why I made it, who it is for, and what makes it special." required></textarea>
+        </label>
+
+        <label class="file-label">
+          Upload an image
+          <input type="file" id="designImage" accept="image/*" />
+          <span class="file-note">PNG, JPG, or GIF. Optional preview.</span>
+        </label>
+
+        <div id="previewContainer" class="preview-container hidden">
+          <img id="previewImage" alt="Design preview" />
+          <p>Preview of your design</p>
+        </div>
+
+        <button type="submit" class="button secondary">Save design</button>
+      </form>
+    </section>
+
+    <section id="gallery" class="section gallery-section">
+      <div class="section-head">
+        <span>Gallery</span>
+        <h3>My latest designs</h3>
+      </div>
+      <div id="galleryGrid" class="gallery-grid"></div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="section-head">
+        <span>Contact</span>
+        <h3>Reach out for custom designs</h3>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-copy">
+          <p>Have a custom order? Email me directly and I will get back to you soon.</p>
+          <div class="contact-box">
+            <strong>Email</strong>
+            <p>globaltraveldairies@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="journal" class="section journal-section">
+      <div class="section-head">
+        <span>Journal</span>
+        <h3>Creative notes and ideas</h3>
+      </div>
+      <div class="journal-copy">
+        <p>Every design starts with an idea. Add a note whenever you want to remember a color combo, a mood, or a new craft plan.</p>
+      </div>
+      <div class="journal-card">
+        <h4>Craft tip</h4>
+        <p>Use a bright marker to write a happy message on your label. It makes your craft feel extra special.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Dhanshika's Craft Studio. Made by Dhanshika, the art and craft founder. Keep dreaming, creating, and sharing!</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
